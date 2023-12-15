@@ -4,6 +4,11 @@ INSERT INTO roles(nome) VALUES ('ROLE_ADMIN');
 INSERT INTO roles(nome) VALUES ('ROLE_USER');
 
 
+/*User Admin inicial */
+INSERT INTO usuarios(nome, login, senha, status) VALUES ('Master Incial', 'master@email.com', '$2a$10$TO8h90vE.vVJW.9D6bHhj.UA6X5T4bUmxU9mZTV6w7blsK5aEFn4u');
+INSERT INTO profiles(role_id, usuario_id) VALUES (1,1);
+
+
 //Categorias
 INSERT INTO categorias(nome) VALUES ('ACAO');
 INSERT INTO categorias(nome) VALUES ('AVENTURA');
