@@ -1,15 +1,12 @@
-//ROLES
+
 INSERT INTO roles(nome) VALUES ('ROLE_MASTER');
 INSERT INTO roles(nome) VALUES ('ROLE_ADMIN');
 INSERT INTO roles(nome) VALUES ('ROLE_USER');
 
 
-/*User Admin inicial */
-INSERT INTO usuarios(nome, login, senha, status) VALUES ('Master Incial', 'master@email.com', '$2a$10$TO8h90vE.vVJW.9D6bHhj.UA6X5T4bUmxU9mZTV6w7blsK5aEFn4u');
+INSERT INTO usuarios(nome, login, senha, status) VALUES ('Master Incial', 'master@email.com', '$2a$10$TO8h90vE.vVJW.9D6bHhj.UA6X5T4bUmxU9mZTV6w7blsK5aEFn4u', true);
 INSERT INTO profiles(role_id, usuario_id) VALUES (1,1);
 
-
-//Categorias
 INSERT INTO categorias(nome) VALUES ('ACAO');
 INSERT INTO categorias(nome) VALUES ('AVENTURA');
 INSERT INTO categorias(nome) VALUES ('ANIMACAO');
@@ -31,7 +28,6 @@ INSERT INTO categorias(nome) VALUES ('POLICIAL');
 INSERT INTO categorias(nome) VALUES ('ESPORTE');
 
 
-//Filmes
 INSERT INTO filmes(nome,descricao,data_lancamento,duracao,imagem) VALUES ('50 First Dates','Henry, um homem com medo de compromisso, conhece a linda Lucy, juntos se apaixonam e ele acredita que finalmente encontrou a garota dos seus sonhos, até descobrir que perdeu sua memória de curto prazo e esquece tudo o que aconteceu. cada dia.','2004-02-13','1 h 39 min','50-first-dates/1.jpg');
 
 
@@ -64,7 +60,6 @@ INSERT INTO filmes(nome,descricao,data_lancamento,duracao,imagem) VALUES ('Wonde
 INSERT INTO filmes(nome,descricao,data_lancamento,duracao,imagem) VALUES ('The Judge','O advogado Hank Palmer, retorna à casa da sua infância, onde seu pai, o juiz da cidade, é suspeito de assassinato. Hank parte para descobrir a verdade e, ao longo do caminho, se reconecta com sua família distante.','2014-09-04','2 h 21 min','the-judge/1.jpg');
 
 
-//Categorias filmes
 INSERT INTO categoria_filme(categoria_id,filme_id) VALUES (4,1);
 INSERT INTO categoria_filme(categoria_id,filme_id) VALUES (6,1);
 INSERT INTO categoria_filme(categoria_id,filme_id) VALUES (12,1);
